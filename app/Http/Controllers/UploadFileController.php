@@ -29,4 +29,13 @@ class UploadFileController extends Controller
             return "Vui lòng chọn tệp cần upload";
         }
     }
+    public function getForm(){
+        return view('getForm');
+    }
+    public function handleFormSubmit(Request $request){
+        $input = $request->all();
+       echo '<h4>Name:'.$input['name'].'</h4>';
+       echo '<h4>UserName:'.$input['username'].'</h4>';
+       echo '<h4>Password:'.$input['password'].'</h4>';
+    }
 }

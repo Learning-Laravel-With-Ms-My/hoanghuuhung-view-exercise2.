@@ -61,10 +61,12 @@ use App\Http\Controllers\UploadFileController;
 // Route::resource('photo',PhotoController::class);
 // Route::resource('my',MyController::class);
 
-Route::get('/post', [FormController::class, 'index']);
-Route::post('/post', [FormController::class, 'store']);
-Route::get('/upload',[UploadFileController::class,'index']);
-Route::post('/upload',[UploadFileController::class, 'handleFile'])->name('categories.upload');
+// Route::get('/post', [FormController::class, 'index']);
+// Route::post('/post', [FormController::class, 'store']);
+// Route::get('/upload',[UploadFileController::class,'index']);
+// Route::post('/upload',[UploadFileController::class, 'handleFile'])->name('categories.upload');
+Route::get('/getform',[UploadFileController::class, 'getForm']);
+Route::post('/getform',[UploadFileController::class, 'handleFormSubmit']);
 // Route::post('/post', function (Request $request){
 //     $name = $request->all();
 //     return dd($name);
