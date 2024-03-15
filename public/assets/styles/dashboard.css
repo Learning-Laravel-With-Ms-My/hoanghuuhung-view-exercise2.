@@ -1,0 +1,102 @@
+/* Custom CSS for sidebar */
+body{
+    background-color: #F9FAFF !important;
+}
+.sidebar {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #F9FAFF;
+    padding-top: 60px; /* Adjust this value as per your need */
+    color: #111;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    /* border-bottom: 1px solid #4e555b; */
+    position: relative;
+}
+.sidebar ul li a {
+    color: #111;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    position: relative;
+}
+.sidebar ul li .fa-angle-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+.sidebar ul li.active .fa-angle-right {
+    transform: translateY(-50%) rotate(90deg);
+}
+.sidebar ul li ul {
+    display: none;
+    position: relative;
+}
+.sidebar ul li ul.show {
+    display: block;
+}
+.sidebar ul li ul li {
+    border-bottom: none;
+}
+.sidebar ul li .rotate {
+    transform: translateY(-50%) rotate(90deg);
+}
+.sidebar img {
+    background: white;
+    padding: 20px;
+}
+
+
+.content-body{
+    margin-left: auto !important;
+}
+
+
+.input-group {
+    position: relative;
+}
+
+.input-group-prepend {
+    position: absolute;
+    left: 10px; /* Điều chỉnh vị trí theo nhu cầu */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.input-group-prepend i {
+    color: #ccc; /* Màu của biểu tượng */
+}
+
+
+.content-body{
+    background-color: #F9FAFF;
+    width: 40% !important;
+}
+/* .container-fluid{
+    height: 100vh !important;
+} */
+
+.form-control {
+    border-radius: 40px !important; /* Đặt border-radius cho cả hai đầu */
+    background-color: #F9FAFF !important;
+    
+}
+.notify img{
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 50%;
+}
+.bg-chart{
+    background-color: #F9FAFF !important;
+
+}

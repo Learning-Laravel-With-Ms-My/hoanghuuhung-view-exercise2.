@@ -153,6 +153,6 @@ Route::group(['middleware' => ['web']], function () {
     });
 });
 
-// Route::get('/dashboard', function (){
-//     return view('admin.dashboard');
-// });
+Route::get('/dashboard', function (){
+    return view('admin.dashboard');
+});
